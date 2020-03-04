@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.0.2)
+  - Plaid (1.1.27)
+
+DEPENDENCIES:
+  - Alamofire
+  - Plaid
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Plaid
+
+SPEC CHECKSUMS:
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  Plaid: af02cc6a5d16d7eca0bc602c439d0e6827372cf1
+
+PODFILE CHECKSUM: 742d0248bd72e4326d798ad53637cd59af3509ea
+
+COCOAPODS: 1.9.0
