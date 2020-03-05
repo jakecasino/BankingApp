@@ -82,7 +82,7 @@ struct TransactionView_Essentials: View {
             
             VStack(alignment: .leading) {
                 Text(transaction.name.capitalized)
-                    .font(.title)
+					.font(.system(.title, design: .serif))
                     .fontWeight(.semibold)
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.bottom)
@@ -176,7 +176,7 @@ struct SimilarTransactions: View {
                 .font(.callout)
                 .foregroundColor(Color(UIColor.secondaryLabel))
                 .padding(.bottom, 20.0)
-            TransactionButton_Compact(transaction: Transaction(account_id: "", name: "Golden Crepes", amount: 24.0, date: "2020-03-03", payment_channel: "online"))
+            TransactionButton(transaction: Transaction(account_id: "", name: "Golden Crepes", amount: 24.0, date: "2020-03-03", payment_channel: "online"))
         }
             .padding(.vertical, 40.0)
     }

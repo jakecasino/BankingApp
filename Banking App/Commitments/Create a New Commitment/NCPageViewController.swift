@@ -8,9 +8,10 @@ A view that wraps a UIPageViewController.
 import SwiftUI
 import UIKit
 
-struct NewCommitmentViewController: UIViewControllerRepresentable {
-    var controllers: [UIViewController]
-    @Binding var currentPage: Int
+struct NCPageViewController: UIViewControllerRepresentable {
+	@EnvironmentObject var pageDataSource: NCPageDataSource
+    
+	var controllers: [UIViewController]
 
     func makeUIViewController(context: Context) -> UIPageViewController {
         let pageViewController = UIPageViewController(
@@ -21,7 +22,14 @@ struct NewCommitmentViewController: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
+		var navigationDirection = UIPageViewController.NavigationDirection.forward
+		
+		if let previousPage = pageDataSource.previousPage {
+			if pageDataSource.currentPage < previousPage {
+				navigationDirection = .reverse
+			}
+		}
         pageViewController.setViewControllers(
-            [controllers[currentPage]], direction: .forward, animated: true)
+			[controllers[pageDataSource.currentPage]], direction: navigationDirection, animated: true)
     }
 }

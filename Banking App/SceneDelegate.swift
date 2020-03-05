@@ -15,7 +15,7 @@ import Alamofire
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     let userData = UserData()
-    let plaidLinkData = PlaidLinkData()
+	let plaidLinkData = PlaidLinkData(developerMode: .development)
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -44,7 +44,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 if let accessTokenCoreData = entity.value(forKey: "accessToken") as? String {
                     plaidLinkData.accessToken = accessTokenCoreData
                     getAccountBalances()
-                    getTransactionCategories()
                     getTransactions()
                 }
             }
@@ -94,6 +93,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         guard let accessToken = plaidLinkData.accessToken else { return }
+		print(accessToken)
         
         let parameters: [String : String] = [
             PlaidAPIParameterTitles.clientID.rawValue : plaidLinkData.clientID,
@@ -123,10 +123,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func getTransactions() {
-        
-        struct Transactions: Decodable {
-            var transactions: [Transaction]
-        }
         
         guard let accessToken = plaidLinkData.accessToken else { return }
         

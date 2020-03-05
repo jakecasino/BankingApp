@@ -120,10 +120,6 @@ struct PlaidViewControllerRepresentable: UIViewControllerRepresentable {
         
         func getTransactions() {
             
-            struct Transactions: Decodable {
-                var transactions: [Transaction]
-            }
-            
             guard let accessToken = main.plaidLinkData.accessToken else { return }
             
             let parameters: [String : String] = [
@@ -157,7 +153,7 @@ struct PlaidViewControllerRepresentable: UIViewControllerRepresentable {
 struct PlaidViewControllerRepresentable_Previews: PreviewProvider {
     static var previews: some View {
         PlaidViewControllerRepresentable()
-            .environmentObject(PlaidLinkData())
+			.environmentObject(PlaidLinkData(developerMode: .sandbox))
             .environment(\.managedObjectContext, NSManagedObjectContext())
             .previewLayout(.sizeThatFits)
     }

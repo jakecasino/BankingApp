@@ -42,8 +42,8 @@ struct TabbedNavigationView: View {
 struct TabbedNavigationView_Previews: PreviewProvider {
     static var previews: some View {
         TabbedNavigationView()
-            .environmentObject(UserData())
-            .environmentObject(PlaidLinkData())
+			.environmentObject(Sample().userData)
+			.environmentObject(PlaidLinkData(developerMode: .sandbox))
             .environment(\.managedObjectContext, NSManagedObjectContext())
     }
 }

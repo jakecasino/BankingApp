@@ -30,7 +30,7 @@ struct TransactionsView: View {
             SectionHeader(title: "Recents")
             VStack(spacing: 15.0) {
                 ForEach(self.userData.transactions, id: \.name) { transaction in
-                    TransactionButton_Compact(transaction: transaction)
+                    TransactionButton(transaction: transaction)
                         .environmentObject(self.userData)
                 }
             }

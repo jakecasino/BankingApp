@@ -10,23 +10,44 @@ import SwiftUI
 
 struct CommitmentsView: View {
     @State var showNewCommitmentModal = false
-    var body: some View {
+    
+	var body: some View {
         ZStack(alignment: .topTrailing) {
             ScrollView(showsIndicators: false) {
-                HStack {
-                    Text("Commitments".uppercased())
-                        .kerning(UIFont.preferredFont(forTextStyle: .body).pointSize * 0.2)
-                        .fontWeight(.bold)
-                    Spacer()
-                }
-                .padding(.top, 50.0)
-                .padding(.horizontal,  30.0)
-                Spacer()
-            }.sheet(isPresented: $showNewCommitmentModal) {
-                Text("New Commitment")
+				VStack {
+					GeometryReader { geometry in
+						VStack {
+							HStack {
+								Text("Commitments".uppercased())
+									.kerning(UIFont.preferredFont(forTextStyle: .body).pointSize * 0.2)
+									.fontWeight(.bold)
+								Spacer()
+							}
+							.padding(.top, 50.0)
+							.padding(.horizontal,  30.0)
+							Spacer()
+							Circle()
+								.trim(from: 0.3, to: 1)
+								.stroke(Color.blue, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+								.rotationEffect(.degrees(90))
+								.rotation3DEffect(Angle(degrees: 180), axis: (x: 1, y: 0, z: 0))
+								.frame(width: 100, height: 100)
+								// .animation(.easeOut)
+							Spacer()
+						}
+						.background(Color(UIColor.systemTeal))
+						.offset(y: geometry.frame(in: .global).minY * 0.5)
+					}
+						.frame(height: 550)
+					TransactionButton(transaction: Transaction(account_id: "0", name: "Golden Crepes", amount: 24.0, date: "2020-03-03", payment_channel: "online"))
+					TransactionButton(transaction: Transaction(account_id: "0", name: "Golden Crepes", amount: 24.0, date: "2020-03-03", payment_channel: "online"))
+					TransactionButton(transaction: Transaction(account_id: "0", name: "Golden Crepes", amount: 24.0, date: "2020-03-03", payment_channel: "online"))
+				}
+			}.sheet(isPresented: $showNewCommitmentModal) {
+				NewCommitmentView()
             }
             Button(action: {
-                self.$showNewCommitmentModal.wrappedValue = true
+				self.$showNewCommitmentModal.wrappedValue = true
             }) {
                 Image(systemName: "plus")
                     .font(.system(size: 17.0, weight: .regular, design: .default))

@@ -8,6 +8,12 @@
 
 import Combine
 
+enum DeveloperModes {
+	case sandbox
+	case development
+	case production
+}
+
 final class UserData: ObservableObject {
     @Published var accounts = [Account]()
     @Published var transactions = [Transaction]()

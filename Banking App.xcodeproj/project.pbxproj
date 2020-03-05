@@ -13,14 +13,13 @@
 		0B80F19D240F81BE00FACB7B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80F19C240F81BE00FACB7B /* MapView.swift */; };
 		0BBF61B724103A1400C3D018 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF61B624103A1400C3D018 /* Sample.swift */; };
 		0BCA60B0241024D700BE162F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCA60AF241024D700BE162F /* Account.swift */; };
-		0BD420C1240E228900AF842A /* TransactionButton_Compact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420C0240E228900AF842A /* TransactionButton_Compact.swift */; };
+		0BD420C1240E228900AF842A /* TransactionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420C0240E228900AF842A /* TransactionButton.swift */; };
 		0BD420C5240E24CA00AF842A /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420C4240E24CA00AF842A /* SectionHeader.swift */; };
 		0BD420C7240E25F700AF842A /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420C6240E25F700AF842A /* TransactionsView.swift */; };
 		0BD420CA240E29DB00AF842A /* CommitmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420C9240E29DB00AF842A /* CommitmentsView.swift */; };
 		0BD420CC240E2A2900AF842A /* ForYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420CB240E2A2900AF842A /* ForYouView.swift */; };
-		0BD420D4240E2CEF00AF842A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420D1240E2CEF00AF842A /* PageViewController.swift */; };
-		0BD420D5240E2CEF00AF842A /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420D2240E2CEF00AF842A /* PageControl.swift */; };
-		0BD420D6240E2CEF00AF842A /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420D3240E2CEF00AF842A /* PageView.swift */; };
+		0BD420D4240E2CEF00AF842A /* NCPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420D1240E2CEF00AF842A /* NCPageViewController.swift */; };
+		0BD420D6240E2CEF00AF842A /* NewCommitmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420D3240E2CEF00AF842A /* NewCommitmentView.swift */; };
 		0BD9D707240DD69900A23866 /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9D706240DD69900A23866 /* TransactionDetailView.swift */; };
 		0BD9D709240E178D00A23866 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9D708240E178D00A23866 /* ProfileView.swift */; };
 		0BD9E7022409C2E4008F5CF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E7012409C2E4008F5CF1 /* AppDelegate.swift */; };
@@ -32,8 +31,13 @@
 		0BD9E7192409C2E8008F5CF1 /* Banking_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E7182409C2E8008F5CF1 /* Banking_AppTests.swift */; };
 		0BD9E7242409C2E8008F5CF1 /* Banking_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E7232409C2E8008F5CF1 /* Banking_AppUITests.swift */; };
 		0BD9E7332409C9E9008F5CF1 /* PlaidViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E7322409C9E9008F5CF1 /* PlaidViewControllerRepresentable.swift */; };
-		0BD9E737240A29D3008F5CF1 /* Account Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E736240A29D3008F5CF1 /* Account Data.swift */; };
 		0BD9E779240A5FAE008F5CF1 /* Banking App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E777240A5FAE008F5CF1 /* Banking App.xcdatamodeld */; };
+		0BF387E224108747001D364B /* NCPage_Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF387E124108747001D364B /* NCPage_Title.swift */; };
+		0BF387E42410880B001D364B /* NCPage_Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF387E32410880B001D364B /* NCPage_Details.swift */; };
+		0BF387E62410A588001D364B /* NCPage_Confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF387E52410A588001D364B /* NCPage_Confirmation.swift */; };
+		0BF387E92410A5DE001D364B /* NCPageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF387E82410A5DE001D364B /* NCPageDataSource.swift */; };
+		0BF387EC2410A662001D364B /* NCPageTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF387EB2410A662001D364B /* NCPageTypes.swift */; };
+		0BF387EE2410A6D0001D364B /* NCPageDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF387ED2410A6D0001D364B /* NCPageDataDelegate.swift */; };
 		3EE8D609BE348B5EC36D73C3 /* Pods_Banking_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB29DFE61BC3C961086BDA /* Pods_Banking_App.framework */; };
 		6AC0F6EE4854B690F1860EC5 /* Pods_Banking_App_Banking_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B384365847A1E6E4D19B4E /* Pods_Banking_App_Banking_AppUITests.framework */; };
 		D93D3567A633EE1A520CFDAF /* Pods_Banking_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD6EE5FF1244D0733F02D84 /* Pods_Banking_AppTests.framework */; };
@@ -63,14 +67,13 @@
 		0B80F19C240F81BE00FACB7B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0BBF61B624103A1400C3D018 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		0BCA60AF241024D700BE162F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		0BD420C0240E228900AF842A /* TransactionButton_Compact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionButton_Compact.swift; sourceTree = "<group>"; };
+		0BD420C0240E228900AF842A /* TransactionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionButton.swift; sourceTree = "<group>"; };
 		0BD420C4240E24CA00AF842A /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		0BD420C6240E25F700AF842A /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
 		0BD420C9240E29DB00AF842A /* CommitmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitmentsView.swift; sourceTree = "<group>"; };
 		0BD420CB240E2A2900AF842A /* ForYouView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouView.swift; sourceTree = "<group>"; };
-		0BD420D1240E2CEF00AF842A /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		0BD420D2240E2CEF00AF842A /* PageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
-		0BD420D3240E2CEF00AF842A /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		0BD420D1240E2CEF00AF842A /* NCPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NCPageViewController.swift; sourceTree = "<group>"; };
+		0BD420D3240E2CEF00AF842A /* NewCommitmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCommitmentView.swift; sourceTree = "<group>"; };
 		0BD420D7240E508D00AF842A /* Banking App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Banking App.entitlements"; sourceTree = "<group>"; };
 		0BD9D706240DD69900A23866 /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
 		0BD9D708240E178D00A23866 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -89,8 +92,13 @@
 		0BD9E7232409C2E8008F5CF1 /* Banking_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banking_AppUITests.swift; sourceTree = "<group>"; };
 		0BD9E7252409C2E8008F5CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BD9E7322409C9E9008F5CF1 /* PlaidViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaidViewControllerRepresentable.swift; sourceTree = "<group>"; };
-		0BD9E736240A29D3008F5CF1 /* Account Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account Data.swift"; sourceTree = "<group>"; };
 		0BD9E778240A5FAE008F5CF1 /* Banking App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Banking App.xcdatamodel"; sourceTree = "<group>"; };
+		0BF387E124108747001D364B /* NCPage_Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCPage_Title.swift; sourceTree = "<group>"; };
+		0BF387E32410880B001D364B /* NCPage_Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCPage_Details.swift; sourceTree = "<group>"; };
+		0BF387E52410A588001D364B /* NCPage_Confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCPage_Confirmation.swift; sourceTree = "<group>"; };
+		0BF387E82410A5DE001D364B /* NCPageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCPageDataSource.swift; sourceTree = "<group>"; };
+		0BF387EB2410A662001D364B /* NCPageTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NCPageTypes.swift; path = "Banking App/Commitments/Create a New Commitment/NCPageTypes.swift"; sourceTree = SOURCE_ROOT; };
+		0BF387ED2410A6D0001D364B /* NCPageDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NCPageDataDelegate.swift; path = "Banking App/Commitments/Create a New Commitment/NCPageDataDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		0EFB29DFE61BC3C961086BDA /* Pods_Banking_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Banking_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B384365847A1E6E4D19B4E /* Pods_Banking_App_Banking_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Banking_App_Banking_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BA1C0AF9ECF80313DA6A76 /* Pods-Banking AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Banking AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Banking AppTests/Pods-Banking AppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +138,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B426D882410AAAF00F37E97 /* ForYou */ = {
+			isa = PBXGroup;
+			children = (
+				0BD420CB240E2A2900AF842A /* ForYouView.swift */,
+			);
+			path = ForYou;
+			sourceTree = "<group>";
+		};
+		0B426D892410AABC00F37E97 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0BD9D708240E178D00A23866 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		0B426D8A2410AACF00F37E97 /* Universal Components */ = {
+			isa = PBXGroup;
+			children = (
+				0BD420C4240E24CA00AF842A /* SectionHeader.swift */,
+			);
+			path = "Universal Components";
+			sourceTree = "<group>";
+		};
 		0BCA60B12410254100BE162F /* Plaid */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,7 +179,7 @@
 				0B80F19C240F81BE00FACB7B /* MapView.swift */,
 				0BD420C6240E25F700AF842A /* TransactionsView.swift */,
 				0BD9D706240DD69900A23866 /* TransactionDetailView.swift */,
-				0BD420C0240E228900AF842A /* TransactionButton_Compact.swift */,
+				0BD420C0240E228900AF842A /* TransactionButton.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -156,9 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				0BD420C9240E29DB00AF842A /* CommitmentsView.swift */,
-				0BD420D2240E2CEF00AF842A /* PageControl.swift */,
-				0BD420D3240E2CEF00AF842A /* PageView.swift */,
-				0BD420D1240E2CEF00AF842A /* PageViewController.swift */,
+				0BF387EA2410A61E001D364B /* Create a New Commitment */,
 			);
 			path = Commitments;
 			sourceTree = "<group>";
@@ -194,12 +224,11 @@
 				0B80F196240F4C0200FACB7B /* UserData.swift */,
 				0BCA60B12410254100BE162F /* Plaid */,
 				0BD9E7052409C2E4008F5CF1 /* TabbedNavigationView.swift */,
-				0BD420CB240E2A2900AF842A /* ForYouView.swift */,
+				0B426D882410AAAF00F37E97 /* ForYou */,
 				0BD420D0240E2AF300AF842A /* Commitments */,
 				0BD420C8240E27EB00AF842A /* Transactions */,
-				0BD9D708240E178D00A23866 /* ProfileView.swift */,
-				0BD420C4240E24CA00AF842A /* SectionHeader.swift */,
-				0BD9E736240A29D3008F5CF1 /* Account Data.swift */,
+				0B426D892410AABC00F37E97 /* Profile */,
+				0B426D8A2410AACF00F37E97 /* Universal Components */,
 				0BD9E7072409C2E8008F5CF1 /* Assets.xcassets */,
 				0BD9E70C2409C2E8008F5CF1 /* LaunchScreen.storyboard */,
 				0BD9E70F2409C2E8008F5CF1 /* Info.plist */,
@@ -236,6 +265,29 @@
 				0BD9E7252409C2E8008F5CF1 /* Info.plist */,
 			);
 			path = "Banking AppUITests";
+			sourceTree = "<group>";
+		};
+		0BF387E72410A5BB001D364B /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				0BF387E124108747001D364B /* NCPage_Title.swift */,
+				0BF387E32410880B001D364B /* NCPage_Details.swift */,
+				0BF387E52410A588001D364B /* NCPage_Confirmation.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		0BF387EA2410A61E001D364B /* Create a New Commitment */ = {
+			isa = PBXGroup;
+			children = (
+				0BD420D3240E2CEF00AF842A /* NewCommitmentView.swift */,
+				0BD420D1240E2CEF00AF842A /* NCPageViewController.swift */,
+				0BF387E82410A5DE001D364B /* NCPageDataSource.swift */,
+				0BF387ED2410A6D0001D364B /* NCPageDataDelegate.swift */,
+				0BF387EB2410A662001D364B /* NCPageTypes.swift */,
+				0BF387E72410A5BB001D364B /* Pages */,
+			);
+			path = "Create a New Commitment";
 			sourceTree = "<group>";
 		};
 		130CB09C1865E37DEF0EA736 /* Pods */ = {
@@ -521,23 +573,27 @@
 			files = (
 				0BD9D709240E178D00A23866 /* ProfileView.swift in Sources */,
 				0BD9E7022409C2E4008F5CF1 /* AppDelegate.swift in Sources */,
+				0BF387E92410A5DE001D364B /* NCPageDataSource.swift in Sources */,
+				0BF387E224108747001D364B /* NCPage_Title.swift in Sources */,
 				0BD9E779240A5FAE008F5CF1 /* Banking App.xcdatamodeld in Sources */,
-				0BD420C1240E228900AF842A /* TransactionButton_Compact.swift in Sources */,
+				0BD420C1240E228900AF842A /* TransactionButton.swift in Sources */,
 				0BD420CA240E29DB00AF842A /* CommitmentsView.swift in Sources */,
-				0BD420D4240E2CEF00AF842A /* PageViewController.swift in Sources */,
+				0BD420D4240E2CEF00AF842A /* NCPageViewController.swift in Sources */,
 				0BD420C7240E25F700AF842A /* TransactionsView.swift in Sources */,
 				0B80F191240EDFE000FACB7B /* Transaction.swift in Sources */,
+				0BF387EE2410A6D0001D364B /* NCPageDataDelegate.swift in Sources */,
+				0BF387E42410880B001D364B /* NCPage_Details.swift in Sources */,
+				0BF387EC2410A662001D364B /* NCPageTypes.swift in Sources */,
 				0BD420CC240E2A2900AF842A /* ForYouView.swift in Sources */,
 				0B80F19B240F61AB00FACB7B /* PlaidLinkData.swift in Sources */,
 				0BBF61B724103A1400C3D018 /* Sample.swift in Sources */,
-				0BD9E737240A29D3008F5CF1 /* Account Data.swift in Sources */,
-				0BD420D5240E2CEF00AF842A /* PageControl.swift in Sources */,
 				0BD9E7332409C9E9008F5CF1 /* PlaidViewControllerRepresentable.swift in Sources */,
 				0BD9E7042409C2E4008F5CF1 /* SceneDelegate.swift in Sources */,
 				0BD420C5240E24CA00AF842A /* SectionHeader.swift in Sources */,
 				0BD9D707240DD69900A23866 /* TransactionDetailView.swift in Sources */,
-				0BD420D6240E2CEF00AF842A /* PageView.swift in Sources */,
+				0BD420D6240E2CEF00AF842A /* NewCommitmentView.swift in Sources */,
 				0B80F19D240F81BE00FACB7B /* MapView.swift in Sources */,
+				0BF387E62410A588001D364B /* NCPage_Confirmation.swift in Sources */,
 				0BD9E7062409C2E4008F5CF1 /* TabbedNavigationView.swift in Sources */,
 				0B80F197240F4C0200FACB7B /* UserData.swift in Sources */,
 				0BCA60B0241024D700BE162F /* Account.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct TransactionButton_Compact: View {
+struct TransactionButton: View {
     @EnvironmentObject var userData: UserData
     @State var showTransactionDetailView = false
     let transaction: Transaction
@@ -17,17 +17,24 @@ struct TransactionButton_Compact: View {
         Button(action: {
             self.showTransactionDetailView = true
         }) {
-            VStack(spacing: 5.0) {
-                HStack {
-                    Spacer()
-                    Image(systemName: TransactionCategoryGlyph(for: transaction))
-                        .font(.caption)
-                }
+			VStack(alignment: .leading, spacing: 5.0) {
+				HStack(alignment: .top) {
+					Image(systemName: TransactionCategoryGlyph(for: transaction))
+						.frame(width: 40, height: 40)
+						.background(Color(UIColor.systemIndigo))
+						.cornerRadius(40 / 2)
+						.foregroundColor(Color(UIColor.systemBackground))
+						.padding(.bottom)
+					Spacer()
+					Text("1 day ago")
+						.font(.caption)
+						.foregroundColor(Color(UIColor.secondaryLabel))
+				}
                 Text(transaction.name.capitalized)
+					.padding(.bottom, 10.0)
                 Text(String(format: "$%.0f", transaction.amount))
-                    .font(.caption)
+					.font(.system(.callout, design: .monospaced))
                     .foregroundColor(Color(UIColor.secondaryLabel))
-                    .padding(.bottom, 10.0)
             }
             .padding(.all, 20.0)
             .background(Color(UIColor.secondarySystemBackground))
@@ -39,26 +46,25 @@ struct TransactionButton_Compact: View {
                 .environmentObject(self.userData)
         }
         .contextMenu {
-            VStack {
-                Button(action: {
-                    self.showTransactionDetailView = true
-                }) {
-                    HStack {
-                        Text("View Transaction")
-                        Image(systemName: "eye")
-                    }
-                }
-            }
+			Button(action: {
+				self.showTransactionDetailView = true
+			}) {
+				HStack {
+					Text("View Transaction")
+					Image(systemName: "eye")
+				}
+			}
         }
         .padding(.horizontal, 20.0)
     }
 }
 
-struct TransactionButton_Compact_Previews: PreviewProvider {
+struct TransactionButton_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TransactionButton_Compact(transaction: Transaction(account_id: "", name: "Golden Crepes", amount: 24.0, date: "2020-03-03", payment_channel: "online"))
+            TransactionButton(transaction: Transaction(account_id: "0", name: "Golden Crepes", amount: 24.0, date: "2020-03-03", payment_channel: "online"))
         }
+		.environmentObject(UserData())
         .previewLayout(.sizeThatFits)
     }
 }

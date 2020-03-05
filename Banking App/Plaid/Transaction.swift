@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct Transactions: Decodable {
+	var transactions: [Transaction]
+}
+
 public struct Transaction: Decodable {
     var account_id: String
     var name: String
