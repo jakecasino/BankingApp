@@ -50,7 +50,6 @@
 		0B9731532418C30E00DA451C /* TimelineCard_BillPaid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1B7A8E2418538F00DE8635 /* TimelineCard_BillPaid.swift */; };
 		0B9731542418C30E00DA451C /* ForYouView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420CB240E2A2900AF842A /* ForYouView.swift */; };
 		0B9731552418C30E00DA451C /* PlaidLinkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80F19A240F61AB00FACB7B /* PlaidLinkData.swift */; };
-		0B9731562418C30E00DA451C /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF61B624103A1400C3D018 /* Sample.swift */; };
 		0B9731572418C30E00DA451C /* PlaidViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E7322409C9E9008F5CF1 /* PlaidViewControllerRepresentable.swift */; };
 		0B9731582418C30E00DA451C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E7032409C2E4008F5CF1 /* SceneDelegate.swift */; };
 		0B9731592418C30E00DA451C /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD420C4240E24CA00AF842A /* SectionHeader.swift */; };
@@ -62,11 +61,9 @@
 		0B97315F2418C30E00DA451C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80F196240F4C0200FACB7B /* UserData.swift */; };
 		0B9731622418C30E00DA451C /* Pods_Banking_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFB29DFE61BC3C961086BDA /* Pods_Banking_App.framework */; };
 		0B9731642418C30E00DA451C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD9E70C2409C2E8008F5CF1 /* LaunchScreen.storyboard */; };
-		0B9731652418C30E00DA451C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BD9E70A2409C2E8008F5CF1 /* Preview Assets.xcassets */; };
 		0B9731662418C30E00DA451C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BD9E7072409C2E8008F5CF1 /* Assets.xcassets */; };
 		0B9A73E3241B812E005BDC26 /* Transaction Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9A73E2241B812E005BDC26 /* Transaction Categories.swift */; };
 		0B9A73E4241B812E005BDC26 /* Transaction Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9A73E2241B812E005BDC26 /* Transaction Categories.swift */; };
-		0BBF61B724103A1400C3D018 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBF61B624103A1400C3D018 /* Sample.swift */; };
 		0BCE34F7241AB5CE008AD05F /* Saving Core Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCE34F6241AB5CE008AD05F /* Saving Core Data.swift */; };
 		0BCE34FB241AD9A3008AD05F /* Initializing Core Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCE34FA241AD9A3008AD05F /* Initializing Core Data.swift */; };
 		0BCE34FC241AD9A3008AD05F /* Initializing Core Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCE34FA241AD9A3008AD05F /* Initializing Core Data.swift */; };
@@ -87,7 +84,6 @@
 		0BD9E7042409C2E4008F5CF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E7032409C2E4008F5CF1 /* SceneDelegate.swift */; };
 		0BD9E7062409C2E4008F5CF1 /* TabbedNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E7052409C2E4008F5CF1 /* TabbedNavigationView.swift */; };
 		0BD9E7082409C2E8008F5CF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BD9E7072409C2E8008F5CF1 /* Assets.xcassets */; };
-		0BD9E70B2409C2E8008F5CF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BD9E70A2409C2E8008F5CF1 /* Preview Assets.xcassets */; };
 		0BD9E70E2409C2E8008F5CF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD9E70C2409C2E8008F5CF1 /* LaunchScreen.storyboard */; };
 		0BD9E7192409C2E8008F5CF1 /* Banking_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E7182409C2E8008F5CF1 /* Banking_AppTests.swift */; };
 		0BD9E7242409C2E8008F5CF1 /* Banking_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD9E7232409C2E8008F5CF1 /* Banking_AppUITests.swift */; };
@@ -145,7 +141,6 @@
 		0B97316D2418C30E00DA451C /* Banking App Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banking App Sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B97316E2418C30F00DA451C /* Banking App Sandbox.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Banking App Sandbox.plist"; path = "/Users/jakecasino/Library/Mobile Documents/iCloud~com~apple~Playgrounds/Documents/BankingApp/Banking App Sandbox.plist"; sourceTree = "<absolute>"; };
 		0B9A73E2241B812E005BDC26 /* Transaction Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction Categories.swift"; sourceTree = "<group>"; };
-		0BBF61B624103A1400C3D018 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		0BCE34F6241AB5CE008AD05F /* Saving Core Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Saving Core Data.swift"; sourceTree = "<group>"; };
 		0BCE34FA241AD9A3008AD05F /* Initializing Core Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Initializing Core Data.swift"; sourceTree = "<group>"; };
 		0BCE34FF241ADE37008AD05F /* Access Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Access Tokens.swift"; sourceTree = "<group>"; };
@@ -164,7 +159,6 @@
 		0BD9E7032409C2E4008F5CF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0BD9E7052409C2E4008F5CF1 /* TabbedNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedNavigationView.swift; sourceTree = "<group>"; };
 		0BD9E7072409C2E8008F5CF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0BD9E70A2409C2E8008F5CF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0BD9E70D2409C2E8008F5CF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BD9E70F2409C2E8008F5CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BD9E7142409C2E8008F5CF1 /* Banking AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Banking AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -384,21 +378,10 @@
 				0BD9E70C2409C2E8008F5CF1 /* LaunchScreen.storyboard */,
 				0BD9E70F2409C2E8008F5CF1 /* Info.plist */,
 				0B4889902419B6C8009B04C0 /* Data Models */,
-				0BD9E7092409C2E8008F5CF1 /* Preview Content */,
 			);
 			path = "Banking App";
 			sourceTree = "<group>";
 			usesTabs = 1;
-		};
-		0BD9E7092409C2E8008F5CF1 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				0BD9E70A2409C2E8008F5CF1 /* Preview Assets.xcassets */,
-				0BBF61B624103A1400C3D018 /* Sample.swift */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-			usesTabs = 0;
 		};
 		0BD9E7172409C2E8008F5CF1 /* Banking AppTests */ = {
 			isa = PBXGroup;
@@ -597,7 +580,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B9731642418C30E00DA451C /* LaunchScreen.storyboard in Resources */,
-				0B9731652418C30E00DA451C /* Preview Assets.xcassets in Resources */,
 				0B9731662418C30E00DA451C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,7 +589,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BD9E70E2409C2E8008F5CF1 /* LaunchScreen.storyboard in Resources */,
-				0BD9E70B2409C2E8008F5CF1 /* Preview Assets.xcassets in Resources */,
 				0BD9E7082409C2E8008F5CF1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -839,7 +820,6 @@
 				0B9731542418C30E00DA451C /* ForYouView.swift in Sources */,
 				0BCE34FC241AD9A3008AD05F /* Initializing Core Data.swift in Sources */,
 				0B9731552418C30E00DA451C /* PlaidLinkData.swift in Sources */,
-				0B9731562418C30E00DA451C /* Sample.swift in Sources */,
 				0B9731572418C30E00DA451C /* PlaidViewControllerRepresentable.swift in Sources */,
 				0B9731582418C30E00DA451C /* SceneDelegate.swift in Sources */,
 				0BCE3502241AE3DF008AD05F /* DeveloperModes.swift in Sources */,
@@ -889,7 +869,6 @@
 				0B48899A2419BBFA009B04C0 /* Transactions.swift in Sources */,
 				0BD420CC240E2A2900AF842A /* ForYouView.swift in Sources */,
 				0B80F19B240F61AB00FACB7B /* PlaidLinkData.swift in Sources */,
-				0BBF61B724103A1400C3D018 /* Sample.swift in Sources */,
 				0BD9E7332409C9E9008F5CF1 /* PlaidViewControllerRepresentable.swift in Sources */,
 				0BD9E7042409C2E4008F5CF1 /* SceneDelegate.swift in Sources */,
 				0BD420C5240E24CA00AF842A /* SectionHeader.swift in Sources */,
@@ -1010,7 +989,7 @@
 				BUNDLE_ID_SUFFIX = .beta;
 				CODE_SIGN_ENTITLEMENTS = "Banking App/Banking App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Banking App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 28CLY5Z59P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Banking App/Info.plist";
@@ -1267,7 +1246,7 @@
 				BUNDLE_ID_SUFFIX = .dev;
 				CODE_SIGN_ENTITLEMENTS = "Banking App/Banking App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Banking App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 28CLY5Z59P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Banking App/Info.plist";
@@ -1291,7 +1270,7 @@
 				BUNDLE_ID_SUFFIX = "";
 				CODE_SIGN_ENTITLEMENTS = "Banking App/Banking App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Banking App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 28CLY5Z59P;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Banking App/Info.plist";
