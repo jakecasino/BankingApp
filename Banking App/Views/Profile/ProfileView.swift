@@ -46,47 +46,11 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
 	static var previews: some View {
-		let previewData = ProfileView_PreviewsData()
+		let previewData = PreviewData()
 		
 		return ProfileView()
 			.environmentObject(previewData.userData)
 			.environmentObject(previewData.plaidLinkData)
 			.previewLayout(.sizeThatFits)
 	}
-}
-
-fileprivate class ProfileView_PreviewsData {
-    @State var userData = UserData()
-    @State var plaidLinkData = PlaidLinkData(developerMode: .sandbox)
-    
-    init() {
-        userData.plaidLinkData = $plaidLinkData
-        plaidLinkData.userData = $userData
-        
-		let sampleBankAccounts = [
-			userData.addSampleBankAccount(name: "Plaid Checking")
-		]
-		userData.addSampleBankInstitution(name: "Plaid Banking", bankAccounts: sampleBankAccounts)
-    }
-}
-
-fileprivate extension UserData {
-	func addSampleBankInstitution(name: String, bankAccounts: [BankAccount]) {
-        let sampleBankInstitution = BankInstitution(context: context)
-        sampleBankInstitution.id  = UUID()
-        sampleBankInstitution.name = name
-		
-		bankAccounts.forEach { (bankAccount) in
-			sampleBankInstitution.addToAccounts(bankAccount)
-		}
-		
-        bankInstitutions.append(sampleBankInstitution)
-    }
-	
-	func addSampleBankAccount(name: String) -> BankAccount {
-        let bankAccount = BankAccount(context: context)
-        bankAccount.name = name
-		
-		return bankAccount
-    }
 }

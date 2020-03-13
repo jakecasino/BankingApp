@@ -22,6 +22,7 @@
 		0B4889982419BA6F009B04C0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4889972419BA6F009B04C0 /* CloudKit.framework */; };
 		0B48899A2419BBFA009B04C0 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4889992419BBFA009B04C0 /* Transactions.swift */; };
 		0B48899B2419BBFA009B04C0 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4889992419BBFA009B04C0 /* Transactions.swift */; };
+		0B67F18C241C1FBD004F9038 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67F18B241C1FBD004F9038 /* PreviewData.swift */; };
 		0B80F191240EDFE000FACB7B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80F190240EDFE000FACB7B /* Transaction.swift */; };
 		0B80F197240F4C0200FACB7B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80F196240F4C0200FACB7B /* UserData.swift */; };
 		0B80F19B240F61AB00FACB7B /* PlaidLinkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80F19A240F61AB00FACB7B /* PlaidLinkData.swift */; };
@@ -134,6 +135,7 @@
 		0B4889942419B75C009B04C0 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
 		0B4889972419BA6F009B04C0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		0B4889992419BBFA009B04C0 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		0B67F18B241C1FBD004F9038 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		0B80F190240EDFE000FACB7B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = "Banking App/Plaid/Transaction.swift"; sourceTree = SOURCE_ROOT; };
 		0B80F196240F4C0200FACB7B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		0B80F19A240F61AB00FACB7B /* PlaidLinkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaidLinkData.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 			children = (
 				0BD9E777240A5FAE008F5CF1 /* Banking App.xcdatamodeld */,
 				0B28500A241A958C00785855 /* DeveloperModes.swift */,
+				0B67F18B241C1FBD004F9038 /* PreviewData.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 		0B4889A32419BD3B009B04C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0BD9E7052409C2E4008F5CF1 /* TabbedNavigationView.swift */,
 				0B426D882410AAAF00F37E97 /* ForYou */,
 				0BD420D0240E2AF300AF842A /* Commitments */,
 				0BD420C8240E27EB00AF842A /* Transactions */,
@@ -302,7 +306,6 @@
 		0BCA60B12410254100BE162F /* Plaid */ = {
 			isa = PBXGroup;
 			children = (
-				0BD9E7052409C2E4008F5CF1 /* TabbedNavigationView.swift */,
 				0B80F19A240F61AB00FACB7B /* PlaidLinkData.swift */,
 				0B48899C2419BC10009B04C0 /* Functions */,
 				0BD9E7322409C9E9008F5CF1 /* PlaidViewControllerRepresentable.swift */,
@@ -872,6 +875,7 @@
 				0BD9E7332409C9E9008F5CF1 /* PlaidViewControllerRepresentable.swift in Sources */,
 				0BD9E7042409C2E4008F5CF1 /* SceneDelegate.swift in Sources */,
 				0BD420C5240E24CA00AF842A /* SectionHeader.swift in Sources */,
+				0B67F18C241C1FBD004F9038 /* PreviewData.swift in Sources */,
 				0B9A73E3241B812E005BDC26 /* Transaction Categories.swift in Sources */,
 				0BD9D707240DD69900A23866 /* TransactionDetailView.swift in Sources */,
 				0BD420D6240E2CEF00AF842A /* NewCommitmentView.swift in Sources */,

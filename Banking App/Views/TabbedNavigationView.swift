@@ -29,10 +29,15 @@ struct TabbedNavigationView: View {
     }
 }
 
-//struct TabbedNavigationView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TabbedNavigationView()
-//			.environmentObject(Sample().userData)
-//			.environmentObject(PlaidLinkData(developerMode: .sandbox))
-//    }
-//}
+
+// MARK: - Previews
+
+struct TabbedNavigationView_Previews: PreviewProvider {
+    static var previews: some View {
+		let previewData = PreviewData()
+		
+        return TabbedNavigationView()
+			.environmentObject(previewData.userData)
+			.environmentObject(previewData.plaidLinkData)
+    }
+}
