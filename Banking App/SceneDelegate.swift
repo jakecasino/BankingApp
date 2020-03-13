@@ -9,45 +9,37 @@
 import UIKit
 import SwiftUI
 import LinkKit
-import CoreData
-import Alamofire
+
+#if DEVELOPMENT
+let developerMode = DeveloperModes.sandbox
+#else
+let developerMode = DeveloperModes.development
+#endif
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-    let userData = UserData()
-	let plaidLinkData = PlaidLinkData(developerMode: .development)
+    
+	@State var userData = UserData()
+	@State var plaidLinkData = PlaidLinkData(developerMode: developerMode)
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+		
+        // MARK: - Set Up Data
+		
+		// Connect UserData to PlaidLinkData, vice versa
+		userData.plaidLinkData = $plaidLinkData
+		plaidLinkData.userData = $userData
+		
+		// Fetch Data
+		userData.initializeCoreData()
         
-        // Get Core Data Context
-        guard let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext else {
-            fatalError("Unable to read managed object context.")
-        }
-        
-        // Set Up Tabbed Navigation View
-        let tabbedNavigationView =
+		
+		// MARK: - Set Up Main View
+		
+		let tabbedNavigationView =
             TabbedNavigationView()
                 .environmentObject(userData)
                 .environmentObject(plaidLinkData)
-                .environment(\.managedObjectContext, context)
-        
-        // Set Up Plaid Data & Get Access Token from Core Data
-        let plaidLink_request = NSFetchRequest<NSFetchRequestResult>(entityName: "PlaidLinkCoreData")
-        plaidLink_request.returnsObjectsAsFaults = false
-        do {
-            let result = try context.fetch(plaidLink_request)
-            if let allEntities = result as? [NSManagedObject], let entity = allEntities.first {
-                plaidLinkData.coreDataEntity  = entity
-                if let accessTokenCoreData = entity.value(forKey: "accessToken") as? String {
-                    plaidLinkData.accessToken = accessTokenCoreData
-                    getAccountBalances()
-                    getTransactions()
-                }
-            }
-        } catch { print("Failed") }
         
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -82,71 +74,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
-        // Save Core Data
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
-    }
-    
-    func getAccountBalances() {
         
-        struct Accounts: Decodable {
-            var accounts: [Account]
-        }
-        
-        guard let accessToken = plaidLinkData.accessToken else { return }
-		print(accessToken)
-        
-        let parameters: [String : String] = [
-            PlaidAPIParameterTitles.clientID.rawValue : plaidLinkData.clientID,
-            PlaidAPIParameterTitles.secret.rawValue: plaidLinkData.secret,
-            PlaidAPIParameterTitles.accessToken.rawValue: accessToken
-        ]
-        
-        AF.request("\(plaidLinkData.host)accounts/balance/get", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: plaidLinkData.headers).responseJSON { response in
-            
-            if let data = response.data {
-                if let accountData = try? JSONDecoder().decode(Accounts.self, from: data) {
-                    DispatchQueue.main.async {
-                        self.userData.accounts = accountData.accounts
-                    }
-                }
-            }
-        }
-    }
-    
-    func getTransactionCategories() {
-        
-        AF.request("\(plaidLinkData.host)categories/get", method: .post, parameters: [String: Any](), encoding: JSONEncoding.default, headers: plaidLinkData.headers).responseJSON { response in
-        
-            // debugPrint("Transaction Categories")
-            // debugPrint(response)
-        }
-    }
-    
-    func getTransactions() {
-        
-        guard let accessToken = plaidLinkData.accessToken else { return }
-        
-        let parameters: [String : String] = [
-            PlaidAPIParameterTitles.clientID.rawValue : plaidLinkData.clientID,
-            PlaidAPIParameterTitles.secret.rawValue: plaidLinkData.secret,
-            PlaidAPIParameterTitles.accessToken.rawValue: accessToken,
-            "start_date": "2020-01-01",
-            "end_date": "2020-03-03"
-        ]
-        
-        AF.request("\(plaidLinkData.host)transactions/get", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: plaidLinkData.headers).responseJSON { response in
-            
-            // debugPrint("Transactions")
-            debugPrint(response)
-            if let data = response.data {
-                if let transactionData = try? JSONDecoder().decode(Transactions.self, from: data) {
-                    DispatchQueue.main.async {
-                        self.userData.transactions = transactionData.transactions
-                    }
-                }
-            }
-        }
+		// Save Core Data
+		userData.saveContext()
     }
 
 }
-

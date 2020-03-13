@@ -7,35 +7,34 @@
 //
 
 import SwiftUI
-import CoreData
-import Combine
 import Alamofire
 
-enum PlaidAPIParameterTitles: String {
-    
-	case clientID = "client_id"
-    case secret = "secret"
-    case publicToken = "public_token"
-    case accessToken = "access_token"
-}
-
 final class PlaidLinkData: ObservableObject {
-    var coreDataEntity: NSManagedObject?
-    
-	let host: String
-    let headers: HTTPHeaders = ["Content-Type": "application/json"]
-    let publicKey = "def4ad236b8b7c59f32fdf31f1bdb0"
-    
-    let clientID = "5de493c9c72d7b0012cb1f3a"
-    
-    // Secrets
-	let secret: String
-    
-    var accessToken: String?
+	var userData: Binding<UserData>?
     
     @Published var showPlaidLinkModal = false
 	
+	let host: String
+	let secret: String
+	
+	struct ParameterTitles {
+		static let clientID = "client_id"
+		static let secret = "secret"
+		static let publicKey = "public_key"
+		static let publicToken = "public_token"
+		static let accessToken = "access_token"
+		static let institutionID = "institution_id"
+	}
+	
+	struct Parameters {
+		static let headers: HTTPHeaders = ["Content-Type": "application/json"]
+		static let publicKey = "def4ad236b8b7c59f32fdf31f1bdb0"
+		static let clientID = "5de493c9c72d7b0012cb1f3a"
+		static let accessToken = "access_token"
+	}
+	
 	init(developerMode: DeveloperModes) {
+		
 		switch developerMode {
 		case .development:
 			host = "https://development.plaid.com/"
@@ -48,5 +47,4 @@ final class PlaidLinkData: ObservableObject {
 			secret = "56b7340726b45dfa709a700277d981"
 		}
 	}
-    
 }
