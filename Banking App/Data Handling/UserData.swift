@@ -18,6 +18,14 @@ final class UserData: ObservableObject {
 	var plaidLinkData: Binding<PlaidLinkData>?
     @Published var transactions = [Transaction]()
 	
+	@Published var needsAuthentication = true
+	
+	
+	// MARK: - Settings
+	
+	@Published var appSettings = AppSettings(unlockWithBiometrics: false)
+	
+	
     // MARK: - Core Data stack
     
     lazy var persistentContainer: NSPersistentCloudKitContainer = {

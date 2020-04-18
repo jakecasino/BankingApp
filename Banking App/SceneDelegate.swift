@@ -37,7 +37,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		// MARK: - Set Up Main View
 		
 		let tabbedNavigationView =
-            TabbedNavigationView()
+			TabbedNavigationView(needsIntro: true)
                 .environmentObject(userData)
                 .environmentObject(plaidLinkData)
         
@@ -59,13 +59,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        // Called when the scene has moved from an inactive state to an active state.
-        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+		userData.appSettings.unlockWithBiometrics = UserDefaults.standard.bool(forKey: AppSettings.BundleKeys.UnlockWithBiometrics)
+		
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
-        // Called when the scene will move from an active state to an inactive state.
-        // This may occur due to temporary interruptions (ex. an incoming phone call).
+		userData.needsAuthentication = true
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {

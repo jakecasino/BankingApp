@@ -17,12 +17,23 @@
 		0B250B88241824BD0013A1DA /* TimelineCard_MoneyAdded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B250B87241824BD0013A1DA /* TimelineCard_MoneyAdded.swift */; };
 		0B250B8A2418255B0013A1DA /* TMLBaseCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B250B892418255B0013A1DA /* TMLBaseCard.swift */; };
 		0B28500B241A958C00785855 /* DeveloperModes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B28500A241A958C00785855 /* DeveloperModes.swift */; };
+		0B3D2F22244B6764002F64FB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B3D2F21244B6764002F64FB /* Settings.bundle */; };
+		0B3D2F23244B6764002F64FB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B3D2F21244B6764002F64FB /* Settings.bundle */; };
+		0B3D2F27244B6D6D002F64FB /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2F24244B6B11002F64FB /* AppSettings.swift */; };
+		0B3D2F28244B6D6E002F64FB /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2F24244B6B11002F64FB /* AppSettings.swift */; };
 		0B4889952419B75C009B04C0 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4889942419B75C009B04C0 /* Accounts.swift */; };
 		0B4889962419B75C009B04C0 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4889942419B75C009B04C0 /* Accounts.swift */; };
 		0B4889982419BA6F009B04C0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4889972419BA6F009B04C0 /* CloudKit.framework */; };
 		0B48899A2419BBFA009B04C0 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4889992419BBFA009B04C0 /* Transactions.swift */; };
 		0B48899B2419BBFA009B04C0 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4889992419BBFA009B04C0 /* Transactions.swift */; };
+		0B5F8E99244A829600886570 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67F18B241C1FBD004F9038 /* PreviewData.swift */; };
+		0B5F8E9B244A863700886570 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F8E9A244A863700886570 /* AuthenticationView.swift */; };
+		0B5F8E9C244A863700886570 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F8E9A244A863700886570 /* AuthenticationView.swift */; };
+		0B5F8E9E244A949F00886570 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F8E9D244A949F00886570 /* IntroView.swift */; };
+		0B5F8E9F244A949F00886570 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F8E9D244A949F00886570 /* IntroView.swift */; };
 		0B67F18C241C1FBD004F9038 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67F18B241C1FBD004F9038 /* PreviewData.swift */; };
+		0B7B8BD2244AD1E600C8D5E1 /* Update App Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B8BD1244AD1E600C8D5E1 /* Update App Settings.swift */; };
+		0B7B8BD3244AD1E600C8D5E1 /* Update App Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B8BD1244AD1E600C8D5E1 /* Update App Settings.swift */; };
 		0B80F191240EDFE000FACB7B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80F190240EDFE000FACB7B /* Transaction.swift */; };
 		0B80F197240F4C0200FACB7B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80F196240F4C0200FACB7B /* UserData.swift */; };
 		0B80F19B240F61AB00FACB7B /* PlaidLinkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80F19A240F61AB00FACB7B /* PlaidLinkData.swift */; };
@@ -132,15 +143,20 @@
 		0B250B87241824BD0013A1DA /* TimelineCard_MoneyAdded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineCard_MoneyAdded.swift; sourceTree = "<group>"; };
 		0B250B892418255B0013A1DA /* TMLBaseCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMLBaseCard.swift; sourceTree = "<group>"; };
 		0B28500A241A958C00785855 /* DeveloperModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperModes.swift; sourceTree = "<group>"; };
+		0B3D2F21244B6764002F64FB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		0B3D2F24244B6B11002F64FB /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		0B4889942419B75C009B04C0 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
 		0B4889972419BA6F009B04C0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		0B4889992419BBFA009B04C0 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		0B5F8E9A244A863700886570 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		0B5F8E9D244A949F00886570 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		0B67F18B241C1FBD004F9038 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		0B7B8BD1244AD1E600C8D5E1 /* Update App Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Update App Settings.swift"; sourceTree = "<group>"; };
 		0B80F190240EDFE000FACB7B /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Transaction.swift; path = "Banking App/Plaid/Transaction.swift"; sourceTree = SOURCE_ROOT; };
 		0B80F196240F4C0200FACB7B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		0B80F19A240F61AB00FACB7B /* PlaidLinkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaidLinkData.swift; sourceTree = "<group>"; };
 		0B80F19C240F81BE00FACB7B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		0B97316D2418C30E00DA451C /* Banking App Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banking App Sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B97316D2418C30E00DA451C /* Banking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B97316E2418C30F00DA451C /* Banking App Sandbox.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Banking App Sandbox.plist"; path = "/Users/jakecasino/Library/Mobile Documents/iCloud~com~apple~Playgrounds/Documents/BankingApp/Banking App Sandbox.plist"; sourceTree = "<absolute>"; };
 		0B9A73E2241B812E005BDC26 /* Transaction Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction Categories.swift"; sourceTree = "<group>"; };
 		0BCE34F6241AB5CE008AD05F /* Saving Core Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Saving Core Data.swift"; sourceTree = "<group>"; };
@@ -231,6 +247,8 @@
 			children = (
 				0B80F196240F4C0200FACB7B /* UserData.swift */,
 				0B28500E241A95DD00785855 /* Functions */,
+				0B3D2F21244B6764002F64FB /* Settings.bundle */,
+				0B3D2F24244B6B11002F64FB /* AppSettings.swift */,
 			);
 			path = "Data Handling";
 			sourceTree = "<group>";
@@ -240,6 +258,7 @@
 			children = (
 				0BCE34FA241AD9A3008AD05F /* Initializing Core Data.swift */,
 				0BCE34F6241AB5CE008AD05F /* Saving Core Data.swift */,
+				0B7B8BD1244AD1E600C8D5E1 /* Update App Settings.swift */,
 			);
 			path = Functions;
 			sourceTree = "<group>";
@@ -294,6 +313,8 @@
 			isa = PBXGroup;
 			children = (
 				0BD9E7052409C2E4008F5CF1 /* TabbedNavigationView.swift */,
+				0B5F8E9D244A949F00886570 /* IntroView.swift */,
+				0B5F8E9A244A863700886570 /* AuthenticationView.swift */,
 				0B426D882410AAAF00F37E97 /* ForYou */,
 				0BD420D0240E2AF300AF842A /* Commitments */,
 				0BD420C8240E27EB00AF842A /* Transactions */,
@@ -362,7 +383,7 @@
 				0BD9E6FE2409C2E4008F5CF1 /* Banking App.app */,
 				0BD9E7142409C2E8008F5CF1 /* Banking AppTests.xctest */,
 				0BD9E71F2409C2E8008F5CF1 /* Banking AppUITests.xctest */,
-				0B97316D2418C30E00DA451C /* Banking App Sandbox.app */,
+				0B97316D2418C30E00DA451C /* Banking App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -471,7 +492,7 @@
 			);
 			name = "Banking App Sandbox";
 			productName = "Banking App";
-			productReference = 0B97316D2418C30E00DA451C /* Banking App Sandbox.app */;
+			productReference = 0B97316D2418C30E00DA451C /* Banking App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0BD9E6FD2409C2E4008F5CF1 /* Banking App */ = {
@@ -583,6 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B9731642418C30E00DA451C /* LaunchScreen.storyboard in Resources */,
+				0B3D2F23244B6764002F64FB /* Settings.bundle in Resources */,
 				0B9731662418C30E00DA451C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +614,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BD9E70E2409C2E8008F5CF1 /* LaunchScreen.storyboard in Resources */,
+				0B3D2F22244B6764002F64FB /* Settings.bundle in Resources */,
 				0BD9E7082409C2E8008F5CF1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -804,6 +827,7 @@
 				0B9731442418C30E00DA451C /* Banking App.xcdatamodeld in Sources */,
 				0B9731452418C30E00DA451C /* TimelineCard_ChallengeEnded.swift in Sources */,
 				0B9731462418C30E00DA451C /* TransactionButton.swift in Sources */,
+				0B5F8E9F244A949F00886570 /* IntroView.swift in Sources */,
 				0B9731472418C30E00DA451C /* CommitmentsView.swift in Sources */,
 				0B9731482418C30E00DA451C /* TimelineCard_ChallengeStarted.swift in Sources */,
 				0B9731492418C30E00DA451C /* Timeline.swift in Sources */,
@@ -827,9 +851,13 @@
 				0B9731582418C30E00DA451C /* SceneDelegate.swift in Sources */,
 				0BCE3502241AE3DF008AD05F /* DeveloperModes.swift in Sources */,
 				0B9731592418C30E00DA451C /* SectionHeader.swift in Sources */,
+				0B5F8E99244A829600886570 /* PreviewData.swift in Sources */,
+				0B3D2F27244B6D6D002F64FB /* AppSettings.swift in Sources */,
+				0B5F8E9C244A863700886570 /* AuthenticationView.swift in Sources */,
 				0B9A73E4241B812E005BDC26 /* Transaction Categories.swift in Sources */,
 				0B97315A2418C30E00DA451C /* TransactionDetailView.swift in Sources */,
 				0B97315B2418C30E00DA451C /* NewCommitmentView.swift in Sources */,
+				0B7B8BD3244AD1E600C8D5E1 /* Update App Settings.swift in Sources */,
 				0B97315C2418C30E00DA451C /* MapView.swift in Sources */,
 				0B97315D2418C30E00DA451C /* NCPage_Confirmation.swift in Sources */,
 				0BDF385B241B194B00BFC878 /* Institutions.swift in Sources */,
@@ -852,6 +880,7 @@
 				0BF387E224108747001D364B /* NCPage_Title.swift in Sources */,
 				0B1B7A9C2418907600DE8635 /* TimelineEventCard.swift in Sources */,
 				0BD9E779240A5FAE008F5CF1 /* Banking App.xcdatamodeld in Sources */,
+				0B5F8E9E244A949F00886570 /* IntroView.swift in Sources */,
 				0B1B7A972418577200DE8635 /* TimelineCard_ChallengeEnded.swift in Sources */,
 				0BCE34FB241AD9A3008AD05F /* Initializing Core Data.swift in Sources */,
 				0BD420C1240E228900AF842A /* TransactionButton.swift in Sources */,
@@ -876,9 +905,12 @@
 				0BD9E7042409C2E4008F5CF1 /* SceneDelegate.swift in Sources */,
 				0BD420C5240E24CA00AF842A /* SectionHeader.swift in Sources */,
 				0B67F18C241C1FBD004F9038 /* PreviewData.swift in Sources */,
+				0B3D2F28244B6D6E002F64FB /* AppSettings.swift in Sources */,
+				0B5F8E9B244A863700886570 /* AuthenticationView.swift in Sources */,
 				0B9A73E3241B812E005BDC26 /* Transaction Categories.swift in Sources */,
 				0BD9D707240DD69900A23866 /* TransactionDetailView.swift in Sources */,
 				0BD420D6240E2CEF00AF842A /* NewCommitmentView.swift in Sources */,
+				0B7B8BD2244AD1E600C8D5E1 /* Update App Settings.swift in Sources */,
 				0B80F19D240F81BE00FACB7B /* MapView.swift in Sources */,
 				0B28500B241A958C00785855 /* DeveloperModes.swift in Sources */,
 				0BEC2928241B14EC00F7B570 /* Institutions.swift in Sources */,
@@ -1061,6 +1093,7 @@
 				BUNDLE_ID_SUFFIX = .dev;
 				CODE_SIGN_ENTITLEMENTS = "Banking App/Banking App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Banking App/Preview Content\"";
 				DEVELOPMENT_TEAM = 28CLY5Z59P;
 				ENABLE_PREVIEWS = YES;
@@ -1070,8 +1103,8 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jakecasino.Banking-App-Sandbox";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakecasino.Banking-App-BetaSandbox";
+				PRODUCT_NAME = "Banking App";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1086,6 +1119,7 @@
 				BUNDLE_ID_SUFFIX = "";
 				CODE_SIGN_ENTITLEMENTS = "Banking App/Banking App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Banking App/Preview Content\"";
 				DEVELOPMENT_TEAM = 28CLY5Z59P;
 				ENABLE_PREVIEWS = YES;
@@ -1095,8 +1129,8 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jakecasino.Banking-App-Sandbox";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakecasino.Banking-App-BetaSandbox";
+				PRODUCT_NAME = "Banking App";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1111,6 +1145,7 @@
 				BUNDLE_ID_SUFFIX = .beta;
 				CODE_SIGN_ENTITLEMENTS = "Banking App/Banking App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Banking App/Preview Content\"";
 				DEVELOPMENT_TEAM = 28CLY5Z59P;
 				ENABLE_PREVIEWS = YES;
@@ -1120,8 +1155,8 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -DDEVELOPMENT";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jakecasino.Banking-App-Sandbox";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jakecasino.Banking-App-BetaSandbox";
+				PRODUCT_NAME = "Banking App";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

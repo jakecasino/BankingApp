@@ -17,6 +17,7 @@ struct ProfileView: View {
         VStack {
             NavigationView {
                 List {
+					Toggle("Sign In with FaceID", isOn: self.$userData.appSettings.unlockWithBiometrics)
 					ForEach(self.$userData.bankInstitutions.wrappedValue, id: \.id) { (bankInstitution: BankInstitution) in
 						Section(header: Text(bankInstitution.name.unsafelyUnwrapped)) {
 							ForEach(Array(bankInstitution.accounts.unsafelyUnwrapped.allObjects) as! [BankAccount], id: \.id) { (account: BankAccount) in

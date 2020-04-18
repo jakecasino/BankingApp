@@ -12,19 +12,35 @@ import CoreData
 struct TabbedNavigationView: View {
     @EnvironmentObject var userData: UserData
     @EnvironmentObject var plaidLinkData: PlaidLinkData
+	
+	@State var needsIntro: Bool
+	
+	init(needsIntro: Bool) {
+		_needsIntro = State(initialValue: needsIntro)
+	}
     
     var body: some View {
-        TabView {
-            TimelineView()
-                .tabItem {
-                    Image(systemName: "house")
-                }
-            ProfileView()
-                .environmentObject(plaidLinkData)
-                .tabItem {
-                    Image(systemName: "person.crop.circle.fill")
-                }
-        }
+		VStack {
+			if userData.needsAuthentication {
+				if needsIntro {
+					IntroView(needsIntro: $needsIntro)
+				} else {
+					AuthenticationView(needsAuthentication: $userData.needsAuthentication)
+				}
+			} else {
+				TabView {
+					TimelineView()
+						.tabItem {
+							Image(systemName: "house")
+						}
+					ProfileView()
+						.environmentObject(plaidLinkData)
+						.tabItem {
+							Image(systemName: "person.crop.circle.fill")
+						}
+				}
+			}
+		}
 			.environmentObject(userData)
     }
 }
@@ -36,7 +52,7 @@ struct TabbedNavigationView_Previews: PreviewProvider {
     static var previews: some View {
 		let previewData = PreviewData()
 		
-        return TabbedNavigationView()
+		return TabbedNavigationView(needsIntro: false)
 			.environmentObject(previewData.userData)
 			.environmentObject(previewData.plaidLinkData)
     }

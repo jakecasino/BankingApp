@@ -9,7 +9,7 @@
 import SwiftUI
 
 class PreviewData {
-    @State var userData = UserData()
+	@State var userData = UserData()
     @State var plaidLinkData = PlaidLinkData(developerMode: .sandbox)
     
     init() {

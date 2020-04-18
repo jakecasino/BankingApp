@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B97313B2418C30E00DA451C"
-               BuildableName = "Banking App Sandbox.app"
+               BuildableName = "Banking App.app"
                BlueprintName = "Banking App Sandbox"
                ReferencedContainer = "container:Banking App.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B97313B2418C30E00DA451C"
-            BuildableName = "Banking App Sandbox.app"
+            BuildableName = "Banking App.app"
             BlueprintName = "Banking App Sandbox"
             ReferencedContainer = "container:Banking App.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0B97313B2418C30E00DA451C"
-            BuildableName = "Banking App Sandbox.app"
+            BuildableName = "Banking App.app"
             BlueprintName = "Banking App Sandbox"
             ReferencedContainer = "container:Banking App.xcodeproj">
          </BuildableReference>
