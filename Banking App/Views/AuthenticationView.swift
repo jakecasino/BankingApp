@@ -34,29 +34,10 @@ struct AuthenticationView: View {
 				
 				// Face ID Authentication
 				
-				guard self.userData.appSettings.unlockWithBiometrics == true else { return }
-				
-				let context = LAContext()
-				var error: NSError?
-
-				
-				if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-					
-					let reason = "We need to unlock your data."
-
-					context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
-						
-						DispatchQueue.main.async {
-							if success {
-								self.needsAuthentication.wrappedValue.toggle()
-							} else {
-								
-							}
-						}
-					}
-				} else {
-					
-				}
+				guard self.userData.appSettings.prefersUnlockWithBiometrics == true else { return }
+				authenticateWithBiometrics(ifSuccess: {
+					self.needsAuthentication.wrappedValue.toggle()
+				}, ifError: nil)
 			})
     }
 }

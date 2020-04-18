@@ -21,6 +21,8 @@
 		0B3D2F23244B6764002F64FB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0B3D2F21244B6764002F64FB /* Settings.bundle */; };
 		0B3D2F27244B6D6D002F64FB /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2F24244B6B11002F64FB /* AppSettings.swift */; };
 		0B3D2F28244B6D6E002F64FB /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2F24244B6B11002F64FB /* AppSettings.swift */; };
+		0B3D2F2A244BA7FF002F64FB /* Authenticate with Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2F29244BA7FF002F64FB /* Authenticate with Biometrics.swift */; };
+		0B3D2F2B244BA7FF002F64FB /* Authenticate with Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2F29244BA7FF002F64FB /* Authenticate with Biometrics.swift */; };
 		0B4889952419B75C009B04C0 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4889942419B75C009B04C0 /* Accounts.swift */; };
 		0B4889962419B75C009B04C0 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4889942419B75C009B04C0 /* Accounts.swift */; };
 		0B4889982419BA6F009B04C0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4889972419BA6F009B04C0 /* CloudKit.framework */; };
@@ -145,6 +147,7 @@
 		0B28500A241A958C00785855 /* DeveloperModes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperModes.swift; sourceTree = "<group>"; };
 		0B3D2F21244B6764002F64FB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		0B3D2F24244B6B11002F64FB /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		0B3D2F29244BA7FF002F64FB /* Authenticate with Biometrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Authenticate with Biometrics.swift"; sourceTree = "<group>"; };
 		0B4889942419B75C009B04C0 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
 		0B4889972419BA6F009B04C0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		0B4889992419BBFA009B04C0 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
@@ -249,6 +252,7 @@
 				0B28500E241A95DD00785855 /* Functions */,
 				0B3D2F21244B6764002F64FB /* Settings.bundle */,
 				0B3D2F24244B6B11002F64FB /* AppSettings.swift */,
+				0B3D2F29244BA7FF002F64FB /* Authenticate with Biometrics.swift */,
 			);
 			path = "Data Handling";
 			sourceTree = "<group>";
@@ -864,6 +868,7 @@
 				0B97315E2418C30E00DA451C /* TabbedNavigationView.swift in Sources */,
 				0B97315F2418C30E00DA451C /* UserData.swift in Sources */,
 				0BCE3501241ADE37008AD05F /* Access Tokens.swift in Sources */,
+				0B3D2F2B244BA7FF002F64FB /* Authenticate with Biometrics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -917,6 +922,7 @@
 				0BF387E62410A588001D364B /* NCPage_Confirmation.swift in Sources */,
 				0BD9E7062409C2E4008F5CF1 /* TabbedNavigationView.swift in Sources */,
 				0B80F197240F4C0200FACB7B /* UserData.swift in Sources */,
+				0B3D2F2A244BA7FF002F64FB /* Authenticate with Biometrics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

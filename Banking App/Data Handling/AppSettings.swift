@@ -9,9 +9,18 @@
 import Foundation
 
 struct AppSettings {
-	var unlockWithBiometrics: Bool {
+	var prefersUnlockWithBiometrics: Bool {
 		didSet {
-			UserDefaults.standard.set(self.unlockWithBiometrics, forKey: AppSettings.BundleKeys.UnlockWithBiometrics)
+			if oldValue == false {
+				if prefersUnlockWithBiometrics == true {
+					authenticateWithBiometrics(ifSuccess: {
+						UserDefaults.standard.set(true, forKey: AppSettings.BundleKeys.UnlockWithBiometrics)
+					}, ifError: {
+						UserDefaults.standard.set(false, forKey: AppSettings.BundleKeys.UnlockWithBiometrics)
+					})
+					
+				}
+			}
 		}
 	}
 	

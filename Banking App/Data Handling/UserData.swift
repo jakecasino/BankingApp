@@ -23,7 +23,7 @@ final class UserData: ObservableObject {
 	
 	// MARK: - Settings
 	
-	@Published var appSettings = AppSettings(unlockWithBiometrics: false)
+	@Published var appSettings = AppSettings(prefersUnlockWithBiometrics: true)
 	
 	
     // MARK: - Core Data stack

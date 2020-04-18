@@ -59,12 +59,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-		userData.appSettings.unlockWithBiometrics = UserDefaults.standard.bool(forKey: AppSettings.BundleKeys.UnlockWithBiometrics)
+		userData.updateAppSettings()
 		
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
-		userData.needsAuthentication = true
+		
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
@@ -73,8 +73,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
-        
-		// Save Core Data
+		userData.needsAuthentication = true
 		userData.saveContext()
     }
 
