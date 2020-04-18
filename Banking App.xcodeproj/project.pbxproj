@@ -23,6 +23,8 @@
 		0B3D2F28244B6D6E002F64FB /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2F24244B6B11002F64FB /* AppSettings.swift */; };
 		0B3D2F2A244BA7FF002F64FB /* Authenticate with Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2F29244BA7FF002F64FB /* Authenticate with Biometrics.swift */; };
 		0B3D2F2B244BA7FF002F64FB /* Authenticate with Biometrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2F29244BA7FF002F64FB /* Authenticate with Biometrics.swift */; };
+		0B3D2F30244BBA4F002F64FB /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2F2F244BBA4F002F64FB /* AppSettingsView.swift */; };
+		0B3D2F31244BBA4F002F64FB /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D2F2F244BBA4F002F64FB /* AppSettingsView.swift */; };
 		0B4889952419B75C009B04C0 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4889942419B75C009B04C0 /* Accounts.swift */; };
 		0B4889962419B75C009B04C0 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4889942419B75C009B04C0 /* Accounts.swift */; };
 		0B4889982419BA6F009B04C0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4889972419BA6F009B04C0 /* CloudKit.framework */; };
@@ -148,6 +150,7 @@
 		0B3D2F21244B6764002F64FB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		0B3D2F24244B6B11002F64FB /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		0B3D2F29244BA7FF002F64FB /* Authenticate with Biometrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Authenticate with Biometrics.swift"; sourceTree = "<group>"; };
+		0B3D2F2F244BBA4F002F64FB /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
 		0B4889942419B75C009B04C0 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
 		0B4889972419BA6F009B04C0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		0B4889992419BBFA009B04C0 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
@@ -279,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				0BD9D708240E178D00A23866 /* ProfileView.swift */,
+				0B3D2F2F244BBA4F002F64FB /* AppSettingsView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -835,6 +839,7 @@
 				0B9731472418C30E00DA451C /* CommitmentsView.swift in Sources */,
 				0B9731482418C30E00DA451C /* TimelineCard_ChallengeStarted.swift in Sources */,
 				0B9731492418C30E00DA451C /* Timeline.swift in Sources */,
+				0B3D2F31244BBA4F002F64FB /* AppSettingsView.swift in Sources */,
 				0B97314A2418C30E00DA451C /* NCPageViewController.swift in Sources */,
 				0B4889962419B75C009B04C0 /* Accounts.swift in Sources */,
 				0B97314B2418C30E00DA451C /* TimelineView.swift in Sources */,
@@ -889,6 +894,7 @@
 				0B1B7A972418577200DE8635 /* TimelineCard_ChallengeEnded.swift in Sources */,
 				0BCE34FB241AD9A3008AD05F /* Initializing Core Data.swift in Sources */,
 				0BD420C1240E228900AF842A /* TransactionButton.swift in Sources */,
+				0B3D2F30244BBA4F002F64FB /* AppSettingsView.swift in Sources */,
 				0BD420CA240E29DB00AF842A /* CommitmentsView.swift in Sources */,
 				0B1B7A952418573800DE8635 /* TimelineCard_ChallengeStarted.swift in Sources */,
 				0B1B7A992418891800DE8635 /* Timeline.swift in Sources */,

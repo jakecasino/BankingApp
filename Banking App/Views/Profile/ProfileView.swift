@@ -12,12 +12,18 @@ import Alamofire
 struct ProfileView: View {
     @EnvironmentObject var userData: UserData
     @EnvironmentObject var plaidLinkData: PlaidLinkData
+	
+	@State var showAppSettingsView = false
     
     var body: some View {
         VStack {
             NavigationView {
                 List {
-					Toggle("Sign In with FaceID", isOn: self.$userData.appSettings.prefersUnlockWithBiometrics)
+					Button(action: {
+						self.showAppSettingsView.toggle()
+					}) {
+						Text("More App Settings")
+					}
 					ForEach(self.$userData.bankInstitutions.wrappedValue, id: \.id) { (bankInstitution: BankInstitution) in
 						Section(header: Text(bankInstitution.name.unsafelyUnwrapped)) {
 							ForEach(Array(bankInstitution.accounts.unsafelyUnwrapped.allObjects) as! [BankAccount], id: \.id) { (account: BankAccount) in
@@ -38,7 +44,10 @@ struct ProfileView: View {
                 })
                 .navigationBarTitle(Text("Accounts"))
             }
-        }
+        }.sheet(isPresented: $showAppSettingsView) {
+			AppSettingsView()
+				.environmentObject(self.userData)
+		}
     }
 }
 
