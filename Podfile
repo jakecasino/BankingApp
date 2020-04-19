@@ -9,12 +9,14 @@ def main_pods
   pod 'Plaid'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
 end
 
-target 'Banking App' do
+target 'Banking' do
   main_pods
 end
 
-target 'Banking App Sandbox' do
+target 'Sandbox' do
   main_pods
 end
