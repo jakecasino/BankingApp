@@ -79,17 +79,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Banking App-Banking AppUITests.xcscheme</key>
+		<key>Pods-Banking App Sandbox.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-Banking App.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Banking AppTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

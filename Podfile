@@ -1,23 +1,20 @@
-# Uncomment the next line to define a global platform for your project
-  platform :ios, '13.4.1'
+# Podfile
 
-target 'Banking App' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+platform :ios, '11.0'
 
-  # Pods for Banking App
+use_frameworks!
+
+def main_pods
   pod 'Alamofire'
   pod 'Plaid'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+end
 
-  target 'Banking AppTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+target 'Banking App' do
+  main_pods
+end
 
-  target 'Banking AppUITests' do
-    # Pods for testing
-  end
-
+target 'Banking App Sandbox' do
+  main_pods
 end
