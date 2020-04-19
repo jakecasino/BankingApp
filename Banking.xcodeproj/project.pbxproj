@@ -255,6 +255,7 @@
 		0B12DE7B244CC9D700D0CE0E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0BF8D94D244C07AD002F7528 /* GoogleService-Info.plist */,
 				0BD9E70F2409C2E8008F5CF1 /* Info.plist */,
 				0B97316E2418C30F00DA451C /* Sandbox.plist */,
 				0B12DE7E244CD0FA00D0CE0E /* Configuration.plist */,
@@ -423,7 +424,6 @@
 				0BD9E7072409C2E8008F5CF1 /* Assets.xcassets */,
 				0BD9E70C2409C2E8008F5CF1 /* LaunchScreen.storyboard */,
 				0B12DE7B244CC9D700D0CE0E /* Supporting Files */,
-				0BF8D94D244C07AD002F7528 /* GoogleService-Info.plist */,
 				0B4889902419B6C8009B04C0 /* Data Models */,
 			);
 			path = Banking;
