@@ -72,7 +72,7 @@ struct PlaidViewControllerRepresentable: UIViewControllerRepresentable {
 struct PlaidViewControllerRepresentable_Previews: PreviewProvider {
     static var previews: some View {
         PlaidViewControllerRepresentable()
-			.environmentObject(PlaidLinkData(developerMode: .sandbox))
+			.environmentObject(PlaidLinkData())
             .previewLayout(.sizeThatFits)
     }
 }

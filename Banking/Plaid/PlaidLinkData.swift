@@ -33,18 +33,30 @@ final class PlaidLinkData: ObservableObject {
 		static let accessToken = "access_token"
 	}
 	
-	init(developerMode: DeveloperModes) {
+	init() {
 		
-		switch developerMode {
-		case .development:
-			host = "https://development.plaid.com/"
-			secret = "915c4e388881a098fc5068f6165cc6"
-		case .sandbox:
-			host = "https://sandbox.plaid.com/"
-			secret = "56b7340726b45dfa709a700277d981"
-		default:
-			host = "https://sandbox.plaid.com/"
-			secret = "56b7340726b45dfa709a700277d981"
+		guard let configurationFile = Bundle.main.path(forResource: "Configuration", ofType: "plist") else {
+				fatalError("Could not find Configuration.plist file")
 		}
+		
+		guard let allConfigurations = NSDictionary(contentsOfFile: configurationFile),
+			let configurationKey = Bundle.main.object(forInfoDictionaryKey: "Configuration") as? String,
+			let configuration = allConfigurations[configurationKey] as? [String: Any]
+			else {
+				fatalError("Could not read Configuration.plist file")
+		}
+		
+		guard let fetchedHost = configuration["PlaidHost"] as? String else {
+			print(configuration)
+			fatalError("Could not read Plaid Host from Configuration.plist")
+		}
+		
+		guard let fetchedSecret = configuration["PlaidSecret"] as? String else {
+			fatalError("Could not read Plaid Secret from Configuration.plist")
+		}
+		
+		host = fetchedHost
+		secret = fetchedSecret
+		
 	}
 }

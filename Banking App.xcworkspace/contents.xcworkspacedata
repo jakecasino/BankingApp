@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Banking App.xcodeproj">
+      location = "group:/Users/jakecasino/Library/Mobile Documents/iCloud~com~apple~Playgrounds/Documents/BankingApp/Banking.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

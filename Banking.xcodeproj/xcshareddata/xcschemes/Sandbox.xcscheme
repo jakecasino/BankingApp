@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0BD9E6FD2409C2E4008F5CF1"
-               BuildableName = "Banking App.app"
-               BlueprintName = "Banking App"
-               ReferencedContainer = "container:Banking App.xcodeproj">
+               BlueprintIdentifier = "0B97313B2418C30E00DA451C"
+               BuildableName = "Banking.Banking Sandbox.app"
+               BlueprintName = "Sandbox"
+               ReferencedContainer = "container:Banking.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0BD9E7132409C2E8008F5CF1"
-               BuildableName = "Banking AppTests.xctest"
-               BlueprintName = "Banking AppTests"
-               ReferencedContainer = "container:Banking App.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0BD9E71E2409C2E8008F5CF1"
-               BuildableName = "Banking AppUITests.xctest"
-               BlueprintName = "Banking AppUITests"
-               ReferencedContainer = "container:Banking App.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -64,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0BD9E6FD2409C2E4008F5CF1"
-            BuildableName = "Banking App.app"
-            BlueprintName = "Banking App"
-            ReferencedContainer = "container:Banking App.xcodeproj">
+            BlueprintIdentifier = "0B97313B2418C30E00DA451C"
+            BuildableName = "Banking.Banking Sandbox.app"
+            BlueprintName = "Sandbox"
+            ReferencedContainer = "container:Banking.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -81,10 +61,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0BD9E6FD2409C2E4008F5CF1"
-            BuildableName = "Banking App.app"
-            BlueprintName = "Banking App"
-            ReferencedContainer = "container:Banking App.xcodeproj">
+            BlueprintIdentifier = "0B97313B2418C30E00DA451C"
+            BuildableName = "Banking.Banking Sandbox.app"
+            BlueprintName = "Sandbox"
+            ReferencedContainer = "container:Banking.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

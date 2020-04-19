@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DeveloperMode</key>
+	<dict>
+		<key>PlaidHost</key>
+		<string>https://development.plaid.com/</string>
+		<key>PlaidSecret</key>
+		<string>915c4e388881a098fc5068f6165cc6</string>
+	</dict>
+	<key>SandboxMode</key>
+	<dict>
+		<key>PlaidHost</key>
+		<string>https://sandbox.plaid.com/</string>
+		<key>PlaidSecret</key>
+		<string>56b7340726b45dfa709a700277d981</string>
+	</dict>
+</dict>
+</plist>

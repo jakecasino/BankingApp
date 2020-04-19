@@ -10,17 +10,17 @@ import UIKit
 import SwiftUI
 import LinkKit
 
-#if DEVELOPMENT
-let developerMode = DeveloperModes.sandbox
-#else
-let developerMode = DeveloperModes.development
-#endif
+//#if DEVELOPMENT
+//let developerMode = DeveloperModes.sandbox
+//#else
+//let developerMode = DeveloperModes.development
+//#endif
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     
 	@State var userData = UserData()
-	@State var plaidLinkData = PlaidLinkData(developerMode: developerMode)
+	@State var plaidLinkData = PlaidLinkData()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 		
